@@ -20,9 +20,8 @@ namespace Sales.Controllers
             //ViewBag.CustId = order.CustId;
             //ViewBag.CustName = order.CustName;
 
-            ViewBag.Desc1 = "我是ViewBag";
-            ViewData["Desc2"] = "我是ViewData";
-            TempData["Desc3"] = "我是TempData";
+            Models.OrderService orderService = new Models.OrderService();
+            ViewBag.Data = orderService.GetOrders();
 
             return View();
         }

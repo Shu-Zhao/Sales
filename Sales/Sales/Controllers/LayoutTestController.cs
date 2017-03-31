@@ -9,6 +9,7 @@ namespace Sales.Controllers
     public class LayoutTestController : Controller
     {
         // GET: LayoutTest
+
         /// <summary>
         /// 測試主版頁面
         /// </summary>
